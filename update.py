@@ -1,5 +1,5 @@
 import sys
-from os import path, environ
+from os import path, environ, system as s
 from logging import (
     INFO,
     ERROR,
@@ -15,7 +15,7 @@ from subprocess import run
 try:
   from dotenv import load_dotenv
 except:
-  os.system("pip install python-dotenv")
+  s("pip install python-dotenv")
   from dotenv import load_dotenv
 from pymongo import MongoClient
 from requests import get

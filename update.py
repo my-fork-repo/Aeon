@@ -1,6 +1,6 @@
 import sys
 from os import path, environ
-import os
+import osh
 from logging import (
     INFO,
     ERROR,
